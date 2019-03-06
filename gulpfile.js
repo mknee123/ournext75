@@ -29,42 +29,43 @@ function copy() {
   .pipe(gulp.dest('./'));
 }
 
-// function processJs() {
-//   return gulp.src('src/js/*.js')
-//   .pipe(babel({
-//       presets: ['env']
-//   }))
-//   .pipe(uglify())
-//   .pipe(rename({
-//     suffix: '.min'
-//   }))
-//   .pipe(gulp.dest('/js'));
-// }
-//
-// function cleanCSS() {
-//   return gulp.src('src/css/*.css')
-//   .pipe(cleanUpCss())
-//   .pipe(rename({
-//     suffix: '.min'
-//   }))
-//   .pipe(gulp.dest('./css'))
-//   .pipe(browserSync.stream());
-// }
-//
-// function watch() {
-//   browserSync.init({
-//     server: true,
-//     open: true,
-//     port: 3000
-//   });
-//   gulp.watch('src/js/*.js', processJs).on('change', browserSync.reload);
-//   gulp.watch('src/css/*.css', cleanCSS).on('change', browserSync.reload);
-//   gulp.watch('src/*.html').on('change', copy);
-// }
+function processJs() {
+  return gulp.src('src/js/*.js')
+  .pipe(babel({
+      presets: ['env']
+  }))
+  .pipe(uglify())
+  .pipe(rename({
+    suffix: '.min'
+  }))
+  .pipe(gulp.dest('js'));
+}
+
+function cleanCSS() {
+  return gulp.src('src/css/*.css')
+  .pipe(cleanUpCss())
+  .pipe(rename({
+    suffix: '.min'
+  }))
+  .pipe(gulp.dest('css'))
+  .pipe(browserSync.stream());
+}
+
+function watch() {
+  browserSync.init({
+    server: true,
+    open: true,
+    port: 3000
+  });
+  gulp.watch('src/js/*.js', processJs).on('change', browserSync.reload);
+  gulp.watch('src/css/*.css', cleanCSS).on('change', browserSync.reload);
+  gulp.watch('src/*.html').on('change', copy);
+  gulp.watch('src/*.html').on('change', browserSync.reload);
+}
 
 
 gulp.task('copy', copy);
 gulp.task('processJs', processJs);
 gulp.task('cleanCSS', cleanCSS);
-gulp.task('serve', gulp.series(copy, processJs, cleanCSS, erve));
+gulp.task('serve', gulp.series(copy, processJs, cleanCSS, serve));
 gulp.task('watch', watch);

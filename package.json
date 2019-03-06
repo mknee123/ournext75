@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/mknee123/ournext75#readme",
   "devDependencies": {
+    "@babel/core": "^7.3.4",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.3",
