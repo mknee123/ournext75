@@ -1,0 +1,30 @@
+{
+  "name": "ournext75.org",
+  "version": "1.0.0",
+  "description": "Our Next 75 is brought to you by the Allegheny Conference on Community development and is celebrating 75 years of existence. The Our Next 75 project is focused on our next 75 years in the greater Pittsburgh Region and improving the areas future for all",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mknee123/ournext75.git"
+  },
+  "keywords": [
+    "Our",
+    "Next",
+    "75",
+    "Pittsburgh",
+    "Allegheny",
+    "Conference"
+  ],
+  "author": "Miranda Knee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mknee123/ournext75/issues"
+  },
+  "homepage": "https://github.com/mknee123/ournext75#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
