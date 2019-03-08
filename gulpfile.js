@@ -23,10 +23,15 @@ function serve() {
 
 function copy() {
   return gulp.src([
-    './src/*.html',
-    './src/**/*.jpg'
+    './src/*.html'
   ])
   .pipe(gulp.dest('./'));
+}
+function copyImg() {
+  return gulp.src([
+    './src/img/*'
+  ])
+  .pipe(gulp.dest('./img'));
 }
 
 function processJs() {
@@ -65,7 +70,8 @@ function watch() {
 
 
 gulp.task('copy', copy);
+gulp.task('copyImg', copyImg);
 gulp.task('processJs', processJs);
 gulp.task('cleanCSS', cleanCSS);
-gulp.task('serve', gulp.series(copy, processJs, cleanCSS, serve));
+gulp.task('serve', gulp.series(copy, copyImg, processJs, cleanCSS, serve));
 gulp.task('watch', watch);
