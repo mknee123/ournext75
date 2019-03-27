@@ -52,9 +52,7 @@ header {
   z-index: 5;
 }
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
   background-color: #f8f8f8;
   -webkit-box-shadow: 0 3px 5px rgba(100, 100, 100, .49);
     -moz-box-shadow: 0 3px 5px rgba(100, 100, 100, .49);
@@ -74,6 +72,9 @@ header {
 }
 .nav-container a:hover, .mobile-nav-container a:hover {
   color:#333
+}
+.navbar-mobile-container {
+  display: block;
 }
 .navbar-mobile {
   position: relative;
@@ -113,9 +114,7 @@ header {
   padding:1rem 2rem;
   font-size: 2rem;
 }
-.toggle-button::after {
-  content: "\0004e";
-}
+
 
 main {
   position: relative;
@@ -138,7 +137,8 @@ main {
 }
 
 .container {
-  background-image: url('https://dev.prablog.pelgp.org/wp-content/uploads/2016/08/Banner_WhyPgh.jpg');
+  /* background-image: url('https://dev.prablog.pelgp.org/wp-content/uploads/2016/08/Banner_WhyPgh.jpg'); */
+  background-image: url('img/pgh_map.jpg');
   background-repeat: no-repeat;
   background-position: center;
   padding: 2rem 0;
@@ -155,4 +155,17 @@ main {
   z-index: 4;
   position: relative;
   color: #eeeeee;
+}
+
+/******** MEDIA QUERIES *******/
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .navbar-mobile-container {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

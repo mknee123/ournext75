@@ -1,13 +1,5 @@
 console.log("hello world");
 
-// $(document).ready(function() {
-//     $('#nav-control').on('click', function() {
-//       $('#nav-control').toggleClass('open');
-//       $('#site-body').toggleClass('mainClose');
-//       $('#nav').toggleClass('navClose');
-//     });
-//   });
-
 $(document).ready(function() {
     $('.toggle-button').on('click', function() {
       $('.mobile-nav-container').toggleClass('open');
@@ -15,3 +7,14 @@ $(document).ready(function() {
       //$('#nav').toggleClass('navClose');
     });
   });
+
+var openIcon = 'img/open_menu.svg';
+var closeIcon = 'img/close_menu.svg';
+
+$('.toggle-button').click(function() {
+  if($('#toggleBtn').attr('src') === openIcon){
+    $('#toggleBtn').attr('src', closeIcon);
+  } else {
+    $('#toggleBtn').attr('src', openIcon)
+  }
+})
