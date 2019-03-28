@@ -196,10 +196,6 @@ main {
   position: relative;
   color: #eeeeee;
 }
-footer {
-  color:#f8f8f8;
-}
-
 .events-container {
   display: flex;
   flex-direction: column;
@@ -212,15 +208,36 @@ footer {
 }
 .event-date {
   font-size:.8rem;
+  display: flex;
 }
 .event-venue {
   font-size: .9rem;
+  display: flex;
 }
 .event-time {
   font-size: .9rem;
+  display: flex;
 }
 .event-icon img {
   width: 20px;
+  margin-right: 5px;
+}
+.members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.members p {
+  flex:0 0 50%;
+  line-height: 1.4;
+}
+.members p em {
+  font-size:.85rem;
+  line-height: 1;
+  opacity: .8;
+}
+footer {
+  color:#f8f8f8;
 }
 /******** MEDIA QUERIES *******/
 @media only screen and (min-width: 768px) {
@@ -243,7 +260,10 @@ footer {
     width: 270px;
     margin: 1rem 1rem 0 0;
   }
-  
+  .members p {
+    flex: 0 0 30%;
+    margin-right: 1.6rem;
+  }
 }
 
 @media only screen and (min-width: 890px) {
@@ -257,4 +277,5 @@ footer {
     max-width: 230px;
     margin: 1rem .5rem 1rem 0;
   }
+  
 }
