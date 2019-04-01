@@ -179,6 +179,17 @@ main {
   margin: 2rem auto 0;
   display: block;
 }
+.sponsor-logo-primary {
+  max-width: 400px;
+}
+.sponsor-flex {
+  display: flex;
+  align-items: center;
+}
+.sponsor-logo-secondary {
+  max-width:260px;
+  
+}
 
 .container {
   /* background-image: url('https://dev.prablog.pelgp.org/wp-content/uploads/2016/08/Banner_WhyPgh.jpg'); */
