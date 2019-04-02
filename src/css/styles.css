@@ -11,6 +11,8 @@
 .text-center { text-align: center;}
 .width-50 { max-width:800px; width:90%; margin:auto; padding: 0 1rem;} 
 .gray-background { background: #333;}
+.gold-link { color:gold; text-decoration: none;}
+.gold-link:hover {opacity: .75;}
 /******** TARGETS *******/
 :target {
   display: block;
