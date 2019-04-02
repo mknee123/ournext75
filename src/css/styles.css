@@ -179,16 +179,22 @@ main {
   margin: 2rem auto 0;
   display: block;
 }
+
 .sponsor-logo-primary {
-  max-width: 400px;
+  max-width: 320px;
+  width: 100%;
+  display: block;
+  margin:0;
 }
-.sponsor-flex {
+.sponsor-flex-secondary {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .sponsor-logo-secondary {
-  max-width:260px;
-  
+  max-width:280px;
+  width: 100%;
+  margin: 1rem;
 }
 
 .container {
@@ -305,6 +311,10 @@ footer {
   .event {
     width: 270px;
     margin: 1rem 1rem 0 0;
+  }
+  .sponsor-logo-primary {
+    max-width: 400px;
+    margin:1rem;
   }
 }
 
