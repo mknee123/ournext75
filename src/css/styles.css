@@ -13,6 +13,14 @@
 .gray-background { background: #333;}
 .gold-link { color:gold; text-decoration: none;}
 .gold-link:hover {opacity: .75;}
+ul {
+  list-style: disc;
+  margin-left: 1em;
+}
+li {
+  margin:1em 0;
+  line-height: 1.5;
+}
 /******** TARGETS *******/
 :target {
   display: block;
@@ -166,15 +174,6 @@ main {
   position: relative;
   top:75px;
 }
-
-
-/* main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
 .logo {
   max-width: 350px;
   width:100%;
@@ -209,7 +208,8 @@ main {
 }
 .color-overlay {
   position: absolute;
-  background: rgba(000,000, 000, .85);
+  /* background: rgba(000,000, 000, .85); */
+  background: #333;
   height: 100%;
   width: 100%;
   top:0;
