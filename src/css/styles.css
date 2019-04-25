@@ -181,6 +181,23 @@ main {
   display: block;
 }
 
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.message-box {
+  flex:1;
+  text-align: center;
+  color: white;
+  opacity: .75;
+  padding: 2rem 3rem;
+}
+.message-box p {
+  max-width: 460px;
+  margin: 0 auto;
+}
+
 .sponsor-logo-primary {
   max-width: 320px;
   width: 100%;
