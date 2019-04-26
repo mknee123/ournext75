@@ -197,10 +197,7 @@ main {
   align-items: center;
   background: #eeeeee;
 }
-.message-box {;
-
-  /* color: white; 
-  opacity: .75;*/ 
+.message-box {
   flex: 1;
   position: relative;
 }
@@ -215,8 +212,7 @@ main {
   width: 100%;
   top: 0;
   background:#eee;
-  opacity: .85;
-  
+  opacity: .8;
 }
 .overlay-text {
   position: absolute;  
@@ -235,7 +231,7 @@ main {
 .message-box p {
   max-width: 460px;
   margin: 2rem auto;
-  /* padding: 2rem 3rem; */
+  padding:0 1rem;
   font-size: .85rem;
 }
 
@@ -362,9 +358,7 @@ footer {
   h2 {
     font-size: 2rem;
   }
-  h3 {
-    font-size: 1.5rem;
-  }
+ 
 
   .flex-wrap {
     flex-direction: row;
