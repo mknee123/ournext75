@@ -317,6 +317,12 @@ main {
   display: flex;
   font-family:  'PT Serif', serif;
 }
+.event-sponsor img {
+  max-width:200px; 
+  width:100%; 
+  margin:0 auto; 
+  display:block;
+}
 .event-icon img {
   width: 20px;
   margin-right: 5px;
