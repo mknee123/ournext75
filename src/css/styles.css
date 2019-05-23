@@ -251,6 +251,10 @@ main {
   width: 100%;
   margin: 1rem;
 }
+.sponsor-flex {
+  display: flex;
+  
+}
 .sponsor-list {
   list-style: none;
 }
