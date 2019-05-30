@@ -256,7 +256,7 @@ main {
   flex-wrap: wrap;
 }
 .sponsor-flex div {
-  flex: 1 1 auto;
+  flex: 1;
 }
 .sponsor-list {
   list-style: none;
