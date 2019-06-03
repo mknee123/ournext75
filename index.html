@@ -27,6 +27,7 @@
     </script>
   </head>
   <body>
+ 
     <header>
         <nav class="navbar">
          <a href="#home"><img class="nav-logo" src="img/OurNext75_BlkGold.svg" alt="Our Next 75 logo in black and gold"></a>
@@ -422,12 +423,19 @@
       </footer>
       <!--signup for newsletter (?)-->
     </main>
-    
+    <div id="module">
+        <h1>Sign up for the Summit</h1>
+        <a href="https://alleghenyconference.formstack.com/forms/ournext75_summit" target="_blank">Click here to register</a>
+    </div>
 
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+     <!--popup box-->   
+    <script src="https://cdn.rawgit.com/jackmoore/colorbox/master/jquery.colorbox-min.js"></script>
+    <!--js-cookie-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
     <script>
     var headerHeight = $("navbar").height();
         $(document).ready(function(){

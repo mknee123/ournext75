@@ -359,6 +359,26 @@ main {
 footer {
   color:#f8f8f8;
 }
+/*** popup box ***/
+#module {
+  display:none;
+}
+div#colorbox {
+  z-index: 4;
+  background: #eee;
+  text-align: center;
+
+}
+button#cboxClose {
+  background: #eee;
+  content: "X";
+  font-size: 1.5rem;
+  color: #555;
+  padding: .5rem;
+  border: none;
+  text-align: center;
+}
+
 /******** MEDIA QUERIES *******/
 @media only screen and (min-width: 768px) {
   /* For desktop: */
