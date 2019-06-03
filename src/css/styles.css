@@ -314,6 +314,9 @@ main {
   margin: 1rem 0;
   max-width: 300px;
 }
+.event-title {
+  width: auto;
+}
 .event-date {
   font-size:.9rem;
   display: flex;
@@ -442,4 +445,18 @@ button#cboxClose {
     margin: 1rem .5rem 1rem 0;
   }
   
+}
+
+#mc_embed_signup .mc-field-group input {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  text-indent: 2%;
+}
+#mc_embed_signup .mc-field-group {
+  clear: left;
+  position: relative;
+  width: 96%;
+  padding-bottom: 3%;
+  min-height: 50px;
 }
