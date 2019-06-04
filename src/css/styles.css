@@ -396,7 +396,11 @@ button#cboxClose {
   background: #333;
   color: white;
   transition: all .4s ease;
-  padding: 1rem 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-size:1rem;
+  max-width: 300px;
+  width:100%;
 }
 /******** MEDIA QUERIES *******/
 @media only screen and (min-width: 768px) {

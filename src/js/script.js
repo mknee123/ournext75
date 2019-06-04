@@ -23,6 +23,7 @@ var lastFocus;
 
 function onPopupOpen() {
   $("#module").show();
+ 
 }
 
 function onPopupClose() {
@@ -38,13 +39,14 @@ function onPopupClose() {
 function displayPopup() {
   $.colorbox({
     inline: true,
+    //transition: "fade",
     fixed: true,
     href: "#module",
     className: "cta",
-    width: "100%",
-    maxWidth: 600,
-    height: "100%",
-    maxHeight: 450,
+    maxWidth: "90%",
+    width: "650px",
+    height: "450px",
+    maxHeight: "100%",
     onComplete: onPopupOpen,
     onClosed: onPopupClose
   });
