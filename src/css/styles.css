@@ -63,6 +63,11 @@ h3 {
   width: max-content;
   padding: 0 .75rem .5rem 0;
 }
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
 p {
   font-size: 1rem;
   margin-bottom: 1.25rem;
@@ -365,23 +370,34 @@ footer {
 /*** popup box ***/
 #module {
   display:none;
+  padding: 1rem 2rem;
 }
 div#colorbox {
   z-index: 4;
   background: #eee;
+  color: #555;
+  border: solid 5px gold;
   text-align: center;
-
+  opacity: .95;
+  
 }
+
 button#cboxClose {
   background: #eee;
-  content: "X";
   font-size: 1.5rem;
   color: #555;
   padding: .5rem;
-  border: none;
-  text-align: center;
+  border-right: solid 5px gold;
+  border-left: solid 5px gold;
+  border-bottom: solid 5px gold;
+  border-top: none;
 }
-
+.popup-btn {
+  background: #333;
+  color: white;
+  transition: all .4s ease;
+  padding: 1rem 2rem;
+}
 /******** MEDIA QUERIES *******/
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -447,16 +463,4 @@ button#cboxClose {
   
 }
 
-#mc_embed_signup .mc-field-group input {
-  display: block;
-  width: 100%;
-  padding: 8px 0;
-  text-indent: 2%;
-}
-#mc_embed_signup .mc-field-group {
-  clear: left;
-  position: relative;
-  width: 96%;
-  padding-bottom: 3%;
-  min-height: 50px;
-}
+
