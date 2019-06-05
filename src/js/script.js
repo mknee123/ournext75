@@ -42,9 +42,9 @@ var moduleOptions = {
   className: "cta",
   maxWidth: "650px",
   width: "90%",
-  height: "90%",
+  height: "75%",
   maxHeight: "450px",
-  top: "30%",
+  bottom: "5%",
   onComplete: onPopupOpen,
   onClosed: onPopupClose
 }
