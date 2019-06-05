@@ -23,46 +23,52 @@ var lastFocus;
 
 function onPopupOpen() {
   $("#module").show();
- 
 }
 
 function onPopupClose() {
   $("#module").hide();
-  // Cookies.set('colorboxShown', 'yes', {
-  //   expires: 1
-  // });
-  // $(".clear-cookie").fadeIn();
+  Cookies.set('colorboxShown', 'yes', {
+    expires: 1
+  });
+  $(".clear-cookie").fadeIn();
   lastFocus.focus();
 }
 
+var moduleOptions = {
+  inline: true,
+  //transition: "fade",
+  fixed: true,
+  href: "#module",
+  className: "cta",
+  maxWidth: "650px",
+  width: "90%",
+  height: "90%",
+  maxHeight: "450px",
+  top: "30%",
+  onComplete: onPopupOpen,
+  onClosed: onPopupClose
+}
 
 function displayPopup() {
-  $.colorbox({
-    inline: true,
-    //transition: "fade",
-    fixed: true,
-    href: "#module",
-    className: "cta",
-    maxWidth: "90%",
-    width: "650px",
-    height: "450px",
-    maxHeight: "100%",
-    onComplete: onPopupOpen,
-    onClosed: onPopupClose
-  });
+  $.colorbox(moduleOptions);
 }
 setTimeout(function(){
-  // var popupShown = Cookies.get('colorboxShown');
+  var popupShown = Cookies.get('colorboxShown');
 
-  // if(popupShown){
-  //   console.log("Cookie found. No action necessary");
-  // } else {
-  //   lastFocus = document.activeElement;
-  //   displayPopup();
-  // }
-  displayPopup()
+  if(popupShown){
+    console.log("Cookie found. No action necessary");
+  } else {
+    lastFocus = document.activeElement;
+    displayPopup();
+  }
+  // displayPopup()
 }, 2000);
 
 
-
+$(window).resize(function(){
+  $.colorbox.resize({
+    width: window.innerWidth > parseInt(moduleOptions.maxWidth) ? moduleOptions.maxWidth : moduleOptions.width,
+    height: window.innerHeight > parseInt(moduleOptions.maxHeight) ? moduleOptions.maxHeight : moduleOptions.height,
+  });
+});
 
