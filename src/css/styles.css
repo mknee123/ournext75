@@ -13,6 +13,8 @@
 .text-center { text-align: center;}
 .width-50 { max-width:800px; width:90%; margin:auto; padding: 0 1rem;} 
 .gray-background { background: #333;}
+.door-background { background: #0b0603; }
+.door-gold { color: #eba900; }
 .gold-link { color:gold; text-decoration: none;}
 .gold-link:hover {opacity: .75;}
 ul {
@@ -420,6 +422,67 @@ button#cboxClose {
 .popup-btn:hover {
   background: black;
   color:gold;
+}
+/**** Summit Page ******/
+.door-graphic {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+}
+.door-btn {
+  
+  padding: 1rem;
+  max-width: 400px;
+  width: 100%;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  border: none;
+  
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  border: 3px solid #eba900;
+  color: #eba900;
+  background: #0b0603;
+}
+.door-btn:hover {
+
+  color: #0b0603;
+  background: #eba900;
+  border: 3px solid #0b0603;
+}
+.event-date-summit {
+  font-size:1.2rem;
+  display: flex;
+  font-family:  'PT Serif', serif;
+}
+.event-venue-summit {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  display: flex;
+  font-family:  'PT Serif', serif;
+}
+.event-time-summit {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  display: flex;
+  font-family:  'PT Serif', serif;
+}
+.speaker-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.speaker-info {
+  flex: 1;
+}
+.speaker-img {
+  max-width: 300px;
+  width:100%;
+  border-radius: 1%;
 }
 /******** MEDIA QUERIES *******/
 @media only screen and (min-width: 768px) {
