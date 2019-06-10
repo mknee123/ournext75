@@ -442,11 +442,14 @@ button#cboxClose {
 }
 /**** Summit Page ******/
 .special-link {
-  background:#333;
-  /* border-bottom: 1px solid gold !important; */
+  /* background:#777; */
+  /* border-bottom: 3px solid gold !important; */
 }
 .special-link a {
-  color:gold;
+  /* color:gold; */
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 3px solid gold;
 }
 .door-graphic {
   margin: 0 auto;
