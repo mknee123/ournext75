@@ -13,6 +13,7 @@
 .text-center { text-align: center;}
 .width-50 { max-width:800px; width:90%; margin:auto; padding: 0 1rem;} 
 .gray-background { background: #333;}
+.light-gray-background { background: #eee; }
 .door-background { background: #0b0603; }
 .door-gold { color: #eba900; }
 .gold-link { color:gold; text-decoration: none;}
@@ -353,6 +354,22 @@ main {
   width: 20px;
   margin-right: 5px;
 }
+.summit-btn-two {
+  align-self: center;
+  background: #555;
+  max-width: 400px;
+  width:90%;
+  padding:1rem;
+  margin:1rem;
+  text-align: center;
+  color: gold;
+  transition: all .4s ease;
+  text-decoration: none;
+}
+.summit-btn-two:hover {
+  background: gold;
+  color:#555;
+}
 .members {
   display: flex;
   flex-direction: row;
@@ -424,21 +441,26 @@ button#cboxClose {
   color:gold;
 }
 /**** Summit Page ******/
+.special-link {
+  background:#333;
+  /* border-bottom: 1px solid gold !important; */
+}
+.special-link a {
+  color:gold;
+}
 .door-graphic {
   margin: 0 auto;
   display: block;
   width: 100%;
   max-width: 600px;
 }
-.door-btn {
-  
+.door-btn { 
   padding: 1rem;
   max-width: 400px;
-  width: 100%;
+  width: 90%;
   font-size: 1.35rem;
   text-transform: uppercase;
   border: none;
-  
   text-decoration: none;
   cursor: pointer;
   transition: all .4s ease;
@@ -447,9 +469,10 @@ button#cboxClose {
   border: 3px solid #eba900;
   color: #eba900;
   background: #0b0603;
+  margin-right:1rem;
+  margin-left:1rem;
 }
 .door-btn:hover {
-
   color: #0b0603;
   background: #eba900;
   border: 3px solid #0b0603;
@@ -477,10 +500,12 @@ button#cboxClose {
   align-items: center;
 }
 .speaker-info {
-  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  margin:0 auto;
 }
 .speaker-img {
-  max-width: 300px;
+  max-width: 260px;
   width:100%;
   border-radius: 1%;
 }
@@ -532,6 +557,9 @@ button#cboxClose {
   .sponsor-logo-primary {
     max-width: 400px;
     margin:1rem;
+  }
+  .speaker-info {
+    flex: 0 1 60%;
   }
 }
 
