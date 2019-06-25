@@ -11,7 +11,7 @@
 .top-bottom-padding { padding: 2rem 0;}
 .text-upper { text-transform: uppercase;}
 .text-center { text-align: center;}
-.width-50 { max-width:800px; width:90%; margin:auto; padding: 0 1rem;} 
+.width-50 { max-width:800px; width:90%; margin:auto; padding: 0 1rem;}
 .gray-background { background: #333;}
 .light-gray-background { background: #eee; }
 .door-background { background: #0b0603; }
@@ -131,7 +131,7 @@ header {
 }
 .nav-container li:hover a, .mobile-nav-container span:hover a {
   color: #f8f8f8;
-  
+
 }
 .navbar-mobile-container {
   display: block;
@@ -161,7 +161,7 @@ header {
   transition: all .5s ease-in-out;
   position: relative;
   top: -420px;
-  
+
 }
 .mobile-nav-container.open {
   opacity: 1;
@@ -225,7 +225,7 @@ main {
   opacity: .8;
 }
 .overlay-text {
-  position: absolute;  
+  position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
@@ -280,7 +280,7 @@ main {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: gold; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
@@ -308,7 +308,7 @@ main {
 }
 .quote {
   border-left: 3px solid gold;
-  
+
 }
 .quote p {
   font-family: 'PT Serif', serif;
@@ -350,9 +350,9 @@ main {
   font-family:  'PT Serif', serif;
 }
 .event-sponsor img {
-  max-width:200px; 
-  width:100%; 
-  margin:0 auto; 
+  max-width:200px;
+  width:100%;
+  margin:0 auto;
   display:block;
 }
 .event-icon img {
@@ -393,6 +393,13 @@ main {
 footer {
   color:#f8f8f8;
 }
+.footer-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  width: 100%;
+  padding: 1rem 0;
+}
 /*** popup box ***/
 #module {
   display:none;
@@ -406,7 +413,7 @@ div#colorbox {
   border: solid 5px gold;
   text-align: center;
   opacity: .95;
-  
+
 }
 div#colorbox:focus {
   border:5px solid gold;
@@ -462,7 +469,7 @@ button#cboxClose {
   width: 100%;
   max-width: 600px;
 }
-.door-btn { 
+.door-btn {
   padding: 1rem;
   max-width: 400px;
   width: 90%;
@@ -534,7 +541,7 @@ button#cboxClose {
   h2 {
     font-size: 2rem;
   }
- 
+
 
   .flex-wrap {
     flex-direction: row;
@@ -547,7 +554,7 @@ button#cboxClose {
     font-size: 2.15rem;
     padding-left: 1.5rem;
   }
-  
+
   .members span {
     flex: 0 0 30%;
     margin-right: 1.6rem;
@@ -585,7 +592,7 @@ button#cboxClose {
     max-width: 230px;
     margin: 1rem .5rem 1rem 0;
   }
-  
+
 }
 
 
