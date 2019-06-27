@@ -471,9 +471,69 @@ button#cboxClose {
   color:gold;
 }
 /**** Summit Page ******/
-.summit-subheadline {
-
+h2.summit-subheading {
+  font-size:1.5rem;
+  border: none;
+  text-align: center;
+  opacity: .7;
 }
+.flex-higlights {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+.highlights-container {
+  flex: 1 1 100%;
+  margin: 1rem 2rem;
+  max-width: 250px;
+}
+.one {
+  background:rgb(133, 133, 133);
+  padding: 1rem;
+  position: relative;
+}
+.overlaycolor {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  left: 0;
+  width: 100%;
+  background: #555;
+  transition: all .4s ease;
+}
+.two {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  left: 0;
+  padding:0 1rem;
+  font-size:1.25rem;
+  line-height: 1.3;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease-in;
+}
+.highlights-container:hover .overlaycolor {
+  opacity: .9;
+}
+.highlights-container:hover .two {
+  opacity: 1;
+}
+.highlights-container h1 {
+  transition: color .2s ease;
+}
+.highlights-container:hover h1 {
+  color: #fcc028;
+}
+
 .special-link {
   /* background:#777; */
   /* border-bottom: 3px solid gold !important; */
@@ -628,6 +688,9 @@ border: 0;
   }
   .speaker-info {
     flex: 0 1 60%;
+  }
+  .highlights-container {
+    flex: 1 0 30%;
   }
 }
 
