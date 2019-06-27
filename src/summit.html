@@ -70,6 +70,7 @@
           </div>
         </div>
       </section>
+      <span id="highlights"></span>
       <section class="top-bottom-padding light-gray-background">
         <div class="width-50">
           <h1 class="medium-margin-top margin-bottom text-center"><em>Our Next 75</em> Summit Highlights. </h1>
@@ -77,7 +78,7 @@
           <div class="flex-higlights">
             <div class="highlights-container text-center">
               <div class="one">
-                <a href="" target="_blank">
+                <a href="https://flic.kr/s/aHsmExu9BW" target="_blank">
                 <img src="img/gallery_icon_white.svg" alt="icon for gallery link">
                 <div class="overlaycolor"></div>
                 <div class="two">Check out photos of the event.</div>
@@ -176,7 +177,20 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			  crossorigin="anonymous"></script>
-
+    <script>
+        var headerHeight = $("navbar").height();
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function (e) {
+                    e.preventDefault();
+                    var target = this.hash,
+                    $target = $(target);
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top -90
+                    }, 1200, 'swing', function () {
+                        window.location.hash = target ;
+                    });
+                });
+            });</script>
     <script src="js/script.min.js" charset="utf-8"></script>
   </body>
 </html>
