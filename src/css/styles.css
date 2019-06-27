@@ -192,7 +192,25 @@ main {
   margin: 2rem auto 0;
   display: block;
 }
-
+/**Summit Higlights on HP **/
+.highlights {
+  max-width: 400px;
+  width:100%;
+  padding: 1rem 2rem;
+  margin: 0 auto 3rem;
+  display: block;
+  text-align: center;
+  background: transparent;
+  border: 3px solid #555;
+  color: #555;
+  text-decoration: none;
+  transition: all .4s ease;
+}
+.highlights:hover {
+  background: #555;
+  color: #eee;
+  transition: all .4s ease;
+}
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -453,6 +471,9 @@ button#cboxClose {
   color:gold;
 }
 /**** Summit Page ******/
+.summit-subheadline {
+
+}
 .special-link {
   /* background:#777; */
   /* border-bottom: 3px solid gold !important; */
