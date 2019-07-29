@@ -444,10 +444,6 @@ button#cboxClose {
   font-size: 1rem;
   color: #555;
   padding: .5rem;
-  /* border-right: solid 5px gold;
-  border-left: solid 5px gold;
-  border-bottom: solid 5px gold;
-  border-top: none; */
   border: none;
   position: absolute;
   top: 0;
@@ -533,13 +529,7 @@ h2.summit-subheading {
 .highlights-container:hover h1 {
   color: #fcc028;
 }
-
-.special-link {
-  /* background:#777; */
-  /* border-bottom: 3px solid gold !important; */
-}
 .special-link a {
-  /* color:gold; */
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 3px solid gold;
